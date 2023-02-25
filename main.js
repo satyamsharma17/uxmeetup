@@ -20,6 +20,12 @@ const bindInputToElement = (inputEl, elementEl) => {
     elementEl.textContent = inputEl.value;
   });
 }
+var namechange= document.getElementById('change-name');
+var inputchange=document.getElementById('name');
+
+inputchange.addEventListener("input",function(){
+  namechange.innerHTML=inputchange.value;
+})
 
 document
   .getElementById('download-button')
@@ -38,3 +44,5 @@ document
         FR.readAsDataURL( this.files[0] );
       }
     });
+
+

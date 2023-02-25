@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 body {
   background: #e2e1e0;
   margin: 0 auto;
@@ -13,8 +13,6 @@ body {
 #id-card {
   display: inline-block;
   float: left;
-  align-items: center;
-  text-align: center;
 }
 
 .id-card {
@@ -65,11 +63,11 @@ body {
 .id-card__details {
   font-size: 10px;
   line-height: 1.5;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   width: 30%;
   position: absolute;
-  right: 20px;
-  bottom: 130px;
+  right: 30px;
+  bottom: 90px;
   display: inline-block;
 }
 
@@ -79,7 +77,7 @@ body {
   /* margin-top: 1rem; */
   margin-left: 1rem;
   color: #000;
-  background-color: #F5C444;
+  background-color: #f5c444;
   border: 1px solid transparent;
   text-decoration: none;
   border-radius: 10px;
@@ -91,22 +89,45 @@ body {
   margin-top: 1rem;
   margin-left: 1rem;
   color: #000;
-  background-color: #F5C444;
+  background-color: #f5c444;
   border: 1px solid transparent;
   text-decoration: none;
   border-radius: 10px;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+#name {
+  padding: 8px 10px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: #000;
+  background-color: #f5c444;
+  border: 1px solid transparent;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 #download-button:hover {
   text-decoration: none;
-  color: #F5C444;
+  color: #f5c444;
   background-color: #000;
-  border: 1px solid #F5C444;
+  border: 1px solid #f5c444;
 }
 
 @media only screen and (max-width: 557px) {
-  #download-button, #mugshot {
+  #download-button,
+  #mugshot, #name {
     margin-left: 0;
   }
+}
+
+.id-card__detail {
+  text-align: left;
+}
+
+#change-name {
+  color: #fff;
+  font-size: 11px;
+  bottom: 10px;
+  letter-spacing: 1px;
 }
